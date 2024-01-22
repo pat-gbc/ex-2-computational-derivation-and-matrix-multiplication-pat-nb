@@ -53,7 +53,7 @@ def calculate_activation(sum_total):
     Calculate a step function as an activation of the neuron.
     Hint: use PyTorch `heaviside` function.
     """
-    res = torch.heaviside(sum_total, torch.tensor(0.0).to(sum_total.device))
+    res = torch.heaviside(sum_total, torch.tensor(0.0))
     return res
 
 def calculate_output(X, W, b):
